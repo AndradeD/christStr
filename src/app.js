@@ -19,8 +19,9 @@ mongoose.connect(config.connectionString);
 const app = express();
 const router = express.Router();
 
-app.use(express.static('src/routes/views'));
-app.use(express.static('src/routes/scripts'));
+app.use(express.static('src/views'));
+app.use(express.static('src/scripts'));
+app.use(express.static('src/styles'));
 
 app.use(bodyParser.json({
     limit: '15mb'
