@@ -21,7 +21,7 @@ const router = express.Router();
 
 app.use(express.static('src/views'));
 app.use(express.static('src/scripts'));
-app.use(express.static('src/styles'));
+app.use(express.static('src/templatesPage'));
 
 app.use(bodyParser.json({
     limit: '15mb'
